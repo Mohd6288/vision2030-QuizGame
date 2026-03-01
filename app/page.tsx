@@ -204,7 +204,7 @@ export default function Home() {
             {CATEGORIES.map((c) => (
               <Link
                 key={c.id}
-                href={`/play?category=${c.id}`}
+                href={`/story?category=${c.id}`}
                 className="category-card p-5 rounded-2xl bg-[var(--card)] border border-[var(--border)] group relative overflow-hidden"
               >
                 {/* Hover glow */}
@@ -225,7 +225,7 @@ export default function Home() {
                   </div>
                   <p className="text-xs text-[var(--muted)] leading-relaxed mb-3">{c.description}</p>
                   <span className="text-xs font-semibold transition-all group-hover:translate-x-1 inline-block" style={{ color: c.color }}>
-                    Play &rarr;
+                    Learn &amp; Play &rarr;
                   </span>
                 </div>
               </Link>

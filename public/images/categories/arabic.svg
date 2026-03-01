@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d0a2d"/>
+      <stop offset="100%" stop-color="#1a061a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Large Arabic calligraphy - "بسم الله" style decorative text -->
+  <text x="200" y="120" text-anchor="middle" font-family="serif" font-size="60" fill="#ec4899" opacity="0.25" direction="rtl">عربي</text>
+  <!-- Decorative dots (Arabic diacritics style) -->
+  <circle cx="140" cy="90" r="3" fill="#ec4899" opacity="0.3"/>
+  <circle cx="160" cy="85" r="3" fill="#ec4899" opacity="0.25"/>
+  <circle cx="240" cy="88" r="3" fill="#ec4899" opacity="0.3"/>
+  <circle cx="255" cy="92" r="3" fill="#ec4899" opacity="0.25"/>
+  <!-- Book / Quran representation -->
+  <rect x="140" y="150" width="55" height="75" rx="3" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="1" transform="rotate(-5 167 187)"/>
+  <rect x="205" y="150" width="55" height="75" rx="3" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="1" transform="rotate(5 232 187)"/>
+  <!-- Book spine -->
+  <line x1="200" y1="148" x2="200" y2="228" stroke="#ec4899" stroke-width="2" opacity="0.3"/>
+  <!-- Text lines in book -->
+  <line x1="155" y1="170" x2="185" y2="168" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+  <line x1="155" y1="180" x2="185" y2="178" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+  <line x1="155" y1="190" x2="185" y2="188" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+  <line x1="215" y1="168" x2="245" y2="170" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+  <line x1="215" y1="178" x2="245" y2="180" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+  <line x1="215" y1="188" x2="245" y2="190" stroke="#ec4899" stroke-width="1" opacity="0.15"/>
+  <!-- Scattered Arabic letters -->
+  <text x="70" y="100" font-family="serif" font-size="24" fill="#ec4899" opacity="0.12">ب</text>
+  <text x="330" y="80" font-family="serif" font-size="20" fill="#ec4899" opacity="0.1">ن</text>
+  <text x="50" y="200" font-family="serif" font-size="22" fill="#ec4899" opacity="0.1">ع</text>
+  <text x="340" y="190" font-family="serif" font-size="26" fill="#ec4899" opacity="0.12">م</text>
+  <text x="90" y="250" font-family="serif" font-size="18" fill="#ec4899" opacity="0.08">ل</text>
+  <text x="310" y="250" font-family="serif" font-size="20" fill="#ec4899" opacity="0.08">ك</text>
+  <!-- Pen / Qalam -->
+  <line x1="280" y1="140" x2="320" y2="180" stroke="#ec4899" stroke-width="2.5" opacity="0.25" stroke-linecap="round"/>
+  <circle cx="322" cy="182" r="3" fill="#ec4899" opacity="0.25"/>
+  <!-- Label -->
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ec4899" opacity="0.5">Arabic Language</text>
+</svg>

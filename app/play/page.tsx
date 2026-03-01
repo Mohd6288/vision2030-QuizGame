@@ -8,6 +8,7 @@ import {
   pickNextQuestion, DIFFICULTY_LABELS, DIFFICULTY_COLORS, estimateMaxScore, getRank,
 } from "@/lib/game-engine";
 import { AR, DIFFICULTY_LABELS_AR } from "@/lib/i18n";
+import { sounds } from "@/lib/sounds";
 import type { Question } from "@/lib/questions";
 
 const TOTAL_QUESTIONS = 10;
@@ -90,6 +91,7 @@ function GameContent() {
           handleAnswer(-1); // timeout
           return 0;
         }
+        if (t <= 6) sounds.tick(); // tick sound for last 5 seconds
         return t - 1;
       });
     }, 1000);
@@ -109,6 +111,7 @@ function GameContent() {
     const isCorrect = choice === q.correct;
 
     if (isCorrect) {
+      sounds.correct();
       const newStreak = streak + 1;
       const pts = calculateScore(difficulty, newStreak, timeLeft, hintUsedThisQuestion);
       setScore((s) => s + pts);
@@ -120,6 +123,11 @@ function GameContent() {
       setShowConfetti(true);
       setTimeout(() => { setScorePop(null); setShowConfetti(false); }, 1000);
     } else {
+      if (choice === -1) {
+        sounds.timeout();
+      } else {
+        sounds.incorrect();
+      }
       setStreak(0);
     }
 

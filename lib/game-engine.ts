@@ -99,7 +99,24 @@ export function pickNextQuestion(
     pool = QUESTIONS.filter((q) => q.category === category && !usedIds.has(q.id));
   }
   if (pool.length === 0) return null;
-  return pool[Math.floor(Math.random() * pool.length)];
+  return shuffleQuestion(pool[Math.floor(Math.random() * pool.length)]);
+}
+
+// ── Shuffle question options (Fisher-Yates) ──
+export function shuffleQuestion(q: Question): Question {
+  const options = [...q.options];
+  let correctIdx = q.correct;
+
+  // Fisher-Yates shuffle — track where the correct answer ends up
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [options[i], options[j]] = [options[j], options[i]];
+    // Track the correct index through swaps
+    if (correctIdx === i) correctIdx = j;
+    else if (correctIdx === j) correctIdx = i;
+  }
+
+  return { ...q, options, correct: correctIdx };
 }
 
 // ── Streak fire emoji ──

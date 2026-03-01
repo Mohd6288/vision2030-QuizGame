@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1f0e"/>
+      <stop offset="100%" stop-color="#1a1207"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Dallah (Arabic coffee pot) -->
+  <ellipse cx="200" cy="230" rx="45" ry="15" fill="#f59e0b" opacity="0.15"/>
+  <!-- Pot body -->
+  <path d="M170 140 C170 140 165 200 170 220 C175 235 225 235 230 220 C235 200 230 140 230 140" fill="#f59e0b" opacity="0.35" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Pot lid -->
+  <ellipse cx="200" cy="140" rx="30" ry="8" fill="#f59e0b" opacity="0.4" stroke="#f59e0b" stroke-width="1"/>
+  <!-- Spout -->
+  <path d="M230 160 C250 155 260 145 265 130" stroke="#f59e0b" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <!-- Handle -->
+  <path d="M170 155 C150 155 140 170 145 190" stroke="#f59e0b" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <!-- Finial on top -->
+  <circle cx="200" cy="125" r="5" fill="#f59e0b" opacity="0.5"/>
+  <line x1="200" y1="130" x2="200" y2="140" stroke="#f59e0b" stroke-width="1.5" opacity="0.4"/>
+  <!-- Decorative pattern on pot -->
+  <line x1="175" y1="175" x2="225" y2="175" stroke="#f59e0b" stroke-width="0.8" opacity="0.3"/>
+  <line x1="175" y1="195" x2="225" y2="195" stroke="#f59e0b" stroke-width="0.8" opacity="0.3"/>
+  <!-- Steam wisps -->
+  <path d="M195 115 C193 100 198 90 195 80" stroke="#f59e0b" stroke-width="1" fill="none" opacity="0.2" stroke-linecap="round"/>
+  <path d="M205 115 C207 98 202 88 205 75" stroke="#f59e0b" stroke-width="1" fill="none" opacity="0.2" stroke-linecap="round"/>
+  <!-- Small coffee cups -->
+  <rect x="90" y="220" width="20" height="18" rx="3" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="0.8"/>
+  <rect x="290" y="220" width="20" height="18" rx="3" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="0.8"/>
+  <!-- Dates -->
+  <ellipse cx="330" cy="225" rx="6" ry="4" fill="#8B4513" opacity="0.4"/>
+  <ellipse cx="345" cy="228" rx="6" ry="4" fill="#8B4513" opacity="0.35"/>
+  <ellipse cx="65" cy="227" rx="6" ry="4" fill="#8B4513" opacity="0.4"/>
+  <!-- Label -->
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b" opacity="0.5">Saudi Culture &amp; Heritage</text>
+</svg>

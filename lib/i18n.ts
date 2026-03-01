@@ -55,6 +55,16 @@ export const AR = {
   scoreSaved: "!تم حفظ النتيجة",
   noResults: "لم يتم العثور على نتائج",
   enterName: "أدخل اسمك",
+
+  // Story page
+  storyTitle: "تعرّف على الموضوع",
+  storySkip: "تخطَّ إلى الاختبار",
+  storyNext: "التالي",
+  storyPrev: "السابق",
+  storyStart: "ابدأ الاختبار",
+  funFact: "هل تعلم؟",
+  storyProgress: "التقدم",
+  readyToPlay: "هل أنت مستعد؟",
 } as const;
 
 export const DIFFICULTY_LABELS_AR: Record<number, string> = {

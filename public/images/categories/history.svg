@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d0a0a"/>
+      <stop offset="100%" stop-color="#1a0606"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Crossed swords (Saudi emblem) -->
+  <line x1="130" y1="60" x2="270" y2="200" stroke="#ef4444" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+  <line x1="270" y1="60" x2="130" y2="200" stroke="#ef4444" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+  <!-- Sword handles -->
+  <circle cx="125" cy="55" r="6" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="275" cy="55" r="6" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.3"/>
+  <!-- Palm tree (Saudi emblem) -->
+  <line x1="200" y1="130" x2="200" y2="80" stroke="#ef4444" stroke-width="3" opacity="0.4"/>
+  <path d="M200 80 C190 65 175 65 165 60" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M200 80 C210 65 225 65 235 60" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M200 80 C195 63 185 58 178 52" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M200 80 C205 63 215 58 222 52" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M200 80 C198 60 195 50 200 42" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.35"/>
+  <!-- Timeline -->
+  <line x1="60" y1="230" x2="340" y2="230" stroke="#ef4444" stroke-width="1.5" opacity="0.3"/>
+  <!-- Timeline dots -->
+  <circle cx="80" cy="230" r="4" fill="#ef4444" opacity="0.4"/>
+  <text x="80" y="250" text-anchor="middle" font-size="9" fill="#ef4444" opacity="0.4" font-family="Arial, sans-serif">1902</text>
+  <circle cx="150" cy="230" r="4" fill="#ef4444" opacity="0.4"/>
+  <text x="150" y="250" text-anchor="middle" font-size="9" fill="#ef4444" opacity="0.4" font-family="Arial, sans-serif">1932</text>
+  <circle cx="220" cy="230" r="4" fill="#ef4444" opacity="0.4"/>
+  <text x="220" y="250" text-anchor="middle" font-size="9" fill="#ef4444" opacity="0.4" font-family="Arial, sans-serif">1938</text>
+  <circle cx="290" cy="230" r="5" fill="#ef4444" opacity="0.5"/>
+  <text x="290" y="250" text-anchor="middle" font-size="9" fill="#ef4444" opacity="0.4" font-family="Arial, sans-serif">2030</text>
+  <!-- Diriyah-style fortress outline -->
+  <rect x="140" y="145" width="120" height="55" rx="2" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.2"/>
+  <rect x="155" y="135" width="30" height="65" rx="2" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.15"/>
+  <rect x="215" y="135" width="30" height="65" rx="2" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.15"/>
+  <!-- Crenellations -->
+  <rect x="140" y="140" width="8" height="8" fill="#ef4444" opacity="0.15"/>
+  <rect x="156" y="140" width="8" height="8" fill="#ef4444" opacity="0.15"/>
+  <rect x="236" y="140" width="8" height="8" fill="#ef4444" opacity="0.15"/>
+  <rect x="252" y="140" width="8" height="8" fill="#ef4444" opacity="0.15"/>
+  <!-- Label -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ef4444" opacity="0.5">History &amp; Kings</text>
+</svg>

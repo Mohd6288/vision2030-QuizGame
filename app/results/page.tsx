@@ -6,6 +6,7 @@ import { getRank, estimateMaxScore, getLevel, xpForLevel } from "@/lib/game-engi
 import { getLeaderboard, addToLeaderboard, isTopScore, type LeaderEntry } from "@/lib/leaderboard";
 import { CATEGORIES } from "@/lib/questions";
 import { AR } from "@/lib/i18n";
+import { sounds } from "@/lib/sounds";
 
 interface GameResults {
   score: number;
@@ -47,6 +48,17 @@ export default function ResultsPage() {
       const r = JSON.parse(raw) as GameResults;
       setResults(r);
       setBoard(getLeaderboard());
+
+      // Play sound based on performance
+      const maxP = estimateMaxScore(r.total);
+      const pct = maxP > 0 ? r.score / maxP : 0;
+      setTimeout(() => {
+        if (pct >= 0.75) {
+          sounds.celebration();
+        } else {
+          sounds.levelUp();
+        }
+      }, 500);
     }
   }, []);
 
