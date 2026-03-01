@@ -36,11 +36,17 @@ export function getTimerSeconds(difficulty: number): number {
 }
 
 // ── Score calculation ──
-export function calculateScore(difficulty: number, streak: number, timeLeft: number): number {
+export function calculateScore(
+  difficulty: number,
+  streak: number,
+  timeLeft: number,
+  usedHint: boolean = false
+): number {
   const base = difficulty * 25;
   const streakBonus = streak * 10;
   const timeBonus = Math.ceil(timeLeft / 5) * 5;
-  return base + streakBonus + timeBonus;
+  const raw = base + streakBonus + timeBonus;
+  return usedHint ? Math.ceil(raw * 0.5) : raw;
 }
 
 // ── XP to level ──
@@ -53,13 +59,15 @@ export function xpForLevel(level: number): number {
 }
 
 // ── Performance rank ──
-export function getRank(score: number, maxPossible: number): { letter: string; label: string; color: string } {
+export function getRank(score: number, maxPossible: number): {
+  letter: string; label: string; labelAr: string; color: string;
+} {
   const pct = maxPossible > 0 ? score / maxPossible : 0;
-  if (pct >= 0.9) return { letter: "S", label: "Legendary", color: "#FFD700" };
-  if (pct >= 0.75) return { letter: "A", label: "Excellent", color: "#22c55e" };
-  if (pct >= 0.6) return { letter: "B", label: "Great", color: "#06b6d4" };
-  if (pct >= 0.4) return { letter: "C", label: "Good", color: "#f59e0b" };
-  return { letter: "D", label: "Keep Learning", color: "#ef4444" };
+  if (pct >= 0.9)  return { letter: "S", label: "Legendary",     labelAr: "أسطوري",      color: "#FFD700" };
+  if (pct >= 0.75) return { letter: "A", label: "Excellent",     labelAr: "ممتاز",       color: "#22c55e" };
+  if (pct >= 0.6)  return { letter: "B", label: "Great",         labelAr: "رائع",        color: "#06b6d4" };
+  if (pct >= 0.4)  return { letter: "C", label: "Good",          labelAr: "جيد",         color: "#f59e0b" };
+  return                   { letter: "D", label: "Keep Learning", labelAr: "واصل التعلم", color: "#ef4444" };
 }
 
 // ── Select questions for a round ──

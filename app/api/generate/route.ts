@@ -25,12 +25,13 @@ export async function POST(req: NextRequest) {
     const prompt = `<s>[INST] Generate a ${diffLabel} quiz question about "${cat.name}" related to Saudi Arabia and Vision 2030.
 
 Return ONLY valid JSON in this exact format (no markdown, no extra text):
-{"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"..."}
+{"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"...","hint":"..."}
 
 Rules:
 - "correct" is the index (0-3) of the right answer
 - Make 4 plausible options where only one is correct
 - The explanation should be educational (1-2 sentences)
+- The hint should be a contextual clue that helps without giving the answer away (1 sentence)
 - Difficulty: ${diffLabel} (${difficulty === 1 ? "basic facts" : difficulty === 2 ? "moderate knowledge" : difficulty === 3 ? "specific details" : "expert-level trivia"})
 [/INST]`;
 
@@ -43,7 +44,7 @@ Rules:
       body: JSON.stringify({
         model: MODEL,
         messages: [{ role: "user", content: prompt }],
-        max_tokens: 300,
+        max_tokens: 350,
         temperature: 0.7,
       }),
     });
@@ -74,6 +75,11 @@ Rules:
       !question.explanation
     ) {
       return NextResponse.json({ error: "Invalid question format from AI" }, { status: 502 });
+    }
+
+    // Fallback hint if AI didn't generate one
+    if (!question.hint) {
+      question.hint = "Think carefully about the options and use process of elimination.";
     }
 
     return NextResponse.json({
