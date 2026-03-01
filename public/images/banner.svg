@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1f0f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#003d1f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1f0f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b8860b" />
+      <stop offset="50%" style="stop-color:#FFD700" />
+      <stop offset="100%" style="stop-color:#b8860b" />
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a651" />
+      <stop offset="100%" style="stop-color:#006C35" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="0.8" fill="#006C35" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bg)"/>
+  <rect width="900" height="300" fill="url(#dots)"/>
+
+  <!-- Top border line -->
+  <rect x="0" y="0" width="900" height="3" fill="url(#gold)"/>
+  <!-- Bottom border line -->
+  <rect x="0" y="297" width="900" height="3" fill="url(#gold)"/>
+
+  <!-- Decorative geometric patterns - Islamic inspired -->
+  <!-- Left side pattern -->
+  <g opacity="0.15" transform="translate(30, 70)">
+    <polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="#00a651" stroke-width="1.5"/>
+    <polygon points="40,10 70,28 70,64 40,82 10,64 10,28" fill="none" stroke="#00a651" stroke-width="1"/>
+    <polygon points="40,20 60,33 60,59 40,72 20,59 20,33" fill="none" stroke="#00a651" stroke-width="0.8"/>
+  </g>
+  <g opacity="0.15" transform="translate(30, 160)">
+    <polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="#00a651" stroke-width="1.5"/>
+    <polygon points="40,10 70,28 70,64 40,82 10,64 10,28" fill="none" stroke="#00a651" stroke-width="1"/>
+  </g>
+
+  <!-- Right side pattern -->
+  <g opacity="0.15" transform="translate(790, 70)">
+    <polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="#00a651" stroke-width="1.5"/>
+    <polygon points="40,10 70,28 70,64 40,82 10,64 10,28" fill="none" stroke="#00a651" stroke-width="1"/>
+    <polygon points="40,20 60,33 60,59 40,72 20,59 20,33" fill="none" stroke="#00a651" stroke-width="0.8"/>
+  </g>
+  <g opacity="0.15" transform="translate(790, 160)">
+    <polygon points="40,0 80,23 80,69 40,92 0,69 0,23" fill="none" stroke="#00a651" stroke-width="1.5"/>
+    <polygon points="40,10 70,28 70,64 40,82 10,64 10,28" fill="none" stroke="#00a651" stroke-width="1"/>
+  </g>
+
+  <!-- Crossed swords icon (simplified) -->
+  <g transform="translate(450, 65)" filter="url(#glow)">
+    <line x1="-25" y1="20" x2="25" y2="-20" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="25" y1="20" x2="-25" y2="-20" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+  </g>
+
+  <!-- Palm tree icon -->
+  <g transform="translate(450, 45)" filter="url(#glow)">
+    <line x1="0" y1="5" x2="0" y2="20" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+    <path d="M0,5 Q-12,-5 -18,-2" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0,5 Q12,-5 18,-2" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0,3 Q-10,-8 -15,-8" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0,3 Q10,-8 15,-8" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="450" y="135" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="bold" fill="url(#gold)" filter="url(#glow)">
+    Vision 2030
+  </text>
+  <text x="450" y="175" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="300" fill="#ffffff" letter-spacing="12">
+    QUIZ ARENA
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="210" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8fbc8f" letter-spacing="3">
+    TEST YOUR KNOWLEDGE OF SAUDI ARABIA
+  </text>
+
+  <!-- Decorative line under subtitle -->
+  <line x1="300" y1="225" x2="600" y2="225" stroke="url(#gold)" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Category icons row -->
+  <text x="280" y="262" text-anchor="middle" font-size="22">🏗️</text>
+  <text x="330" y="262" text-anchor="middle" font-size="22">📊</text>
+  <text x="380" y="262" text-anchor="middle" font-size="22">🎭</text>
+  <text x="520" y="262" text-anchor="middle" font-size="22">🌍</text>
+  <text x="570" y="262" text-anchor="middle" font-size="22">📜</text>
+  <text x="620" y="262" text-anchor="middle" font-size="22">🗣️</text>
+
+  <!-- Saudi flag emoji placeholder -->
+  <text x="450" y="265" text-anchor="middle" font-size="24">🇸🇦</text>
+</svg>

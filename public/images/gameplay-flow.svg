@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140">
+  <defs>
+    <linearGradient id="bgFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a1a10" />
+      <stop offset="100%" style="stop-color:#0f1f15" />
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b8860b" />
+      <stop offset="50%" style="stop-color:#FFD700" />
+      <stop offset="100%" style="stop-color:#b8860b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="140" fill="url(#bgFlow)" rx="12"/>
+
+  <!-- Step 1 -->
+  <circle cx="100" cy="50" r="28" fill="#006C35" opacity="0.2" stroke="#006C35" stroke-width="1.5"/>
+  <text x="100" y="56" text-anchor="middle" font-size="24">📋</text>
+  <text x="100" y="95" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#FFD700">Choose</text>
+  <text x="100" y="112" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8fbc8f">Pick a category</text>
+
+  <!-- Arrow 1 -->
+  <line x1="145" y1="50" x2="215" y2="50" stroke="#006C35" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+  <polygon points="215,45 225,50 215,55" fill="#006C35" opacity="0.6"/>
+
+  <!-- Step 2 -->
+  <circle cx="280" cy="50" r="28" fill="#006C35" opacity="0.2" stroke="#006C35" stroke-width="1.5"/>
+  <text x="280" y="56" text-anchor="middle" font-size="24">⏱️</text>
+  <text x="280" y="95" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#FFD700">Answer</text>
+  <text x="280" y="112" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8fbc8f">Beat the timer</text>
+
+  <!-- Arrow 2 -->
+  <line x1="325" y1="50" x2="395" y2="50" stroke="#006C35" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+  <polygon points="395,45 405,50 395,55" fill="#006C35" opacity="0.6"/>
+
+  <!-- Step 3 -->
+  <circle cx="460" cy="50" r="28" fill="#006C35" opacity="0.2" stroke="#006C35" stroke-width="1.5"/>
+  <text x="460" y="56" text-anchor="middle" font-size="24">🔥</text>
+  <text x="460" y="95" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#FFD700">Streak</text>
+  <text x="460" y="112" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8fbc8f">Build combos</text>
+
+  <!-- Arrow 3 -->
+  <line x1="505" y1="50" x2="575" y2="50" stroke="#006C35" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+  <polygon points="575,45 585,50 575,55" fill="#006C35" opacity="0.6"/>
+
+  <!-- Step 4 -->
+  <circle cx="640" cy="50" r="28" fill="#006C35" opacity="0.2" stroke="#006C35" stroke-width="1.5"/>
+  <text x="640" y="56" text-anchor="middle" font-size="24">📊</text>
+  <text x="640" y="95" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#FFD700">Results</text>
+  <text x="640" y="112" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8fbc8f">See your rank</text>
+
+  <!-- Arrow 4 -->
+  <line x1="685" y1="50" x2="755" y2="50" stroke="#006C35" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+  <polygon points="755,45 765,50 755,55" fill="#006C35" opacity="0.6"/>
+
+  <!-- Step 5 -->
+  <circle cx="820" cy="50" r="28" fill="#FFD700" opacity="0.15" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="820" y="56" text-anchor="middle" font-size="24">🏆</text>
+  <text x="820" y="95" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#FFD700">Compete</text>
+  <text x="820" y="112" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" fill="#8fbc8f">Top the board</text>
+</svg>
